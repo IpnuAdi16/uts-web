@@ -1,11 +1,11 @@
-<html>
-    <head>
-        <title>this is my first blade</title>
-    </head>
-    <body>
-        <h1>The View</h1>
-        <p>hallo ini adalah view pertama saya</p>
-    </body>
+@extends('tema.master')
 
+@section('title')
+    this in my first blade
+@endsection
 
-</html>
+@section('content')
+    <h1>the view</h1>
+    <p>halo ini adalah view pertama saya!</p>
+
+@endsection

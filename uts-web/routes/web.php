@@ -59,3 +59,6 @@ Route::get('/testing-view', function () {
 Route::get('/about-me', function () {
     return "Nama Saya <b>ipnu adi</b>";
 });
+
+//modul3
+Route::get("/tema/bootstrap", [UtamaController::class, "index"]);
