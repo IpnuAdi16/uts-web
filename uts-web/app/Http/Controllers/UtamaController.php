@@ -16,6 +16,12 @@ class UtamaController extends Controller
     function saya() {
         return view("user.view-1");
     }
+    function bro1() {
+        return view("user.view-3");
+    }
+    function bro2() {
+        return view("user.view-4");
+    }
 
 
     function bot() {

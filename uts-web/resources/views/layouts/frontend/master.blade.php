@@ -53,14 +53,14 @@
             <li class="active"><a href="home">Home</a></li>
             <li><a href="saya">SAYA</a></li>
             <li><a href="saya1">Tentang</a></li>
-            <li><a href="saya1">Portfolio</a></li>
+            <li><a href="saya2">Portfolio</a></li>
             <li><a href="boting">Team</a></li>
             <li class="drop-down"><a href="">Drop Down</a>
               <ul>
-                <li><a href="#">Drop Down 1</a></li>
+                <li><a href="saya3">Drop Down 1</a></li>
                 <li class="drop-down"><a href="#">Drop Down 2</a>
                   <ul>
-                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="apa-kabar">Deep Drop Down 1</a></li>
                     <li><a href="#">Deep Drop Down 2</a></li>
                     <li><a href="#">Deep Drop Down 3</a></li>
                     <li><a href="#">Deep Drop Down 4</a></li>
