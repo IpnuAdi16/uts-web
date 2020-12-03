@@ -1,4 +1,4 @@
-@extends('tema.master')
+@extends('layouts.frontend.master')
 
 @section('title')
     this in my first blade

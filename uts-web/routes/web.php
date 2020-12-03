@@ -12,53 +12,26 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 use App\Http\Controllers\UtamaController;
+use App\Http\Controllers\BeritaController;
 
-Route::get("/utama/test", [UtamaController::class, "test"]);
+Route::get('/home', [UtamaController::class, "home"])->name("home");
+Route::get("/saya", [UtamaController::class, "saya"])->name("nama1.1");
+Route::get("/saya1", [UtamaController::class, "bro"])->name("nama1.2");
+Route::get("/boting", [UtamaController::class, "bot"])->name("nama1.2");
+Route::get("/apa-kabar", [UtamaController::class, "apakabar"])->name("nama");
+Route::get("/hello/{nama?}", [UtamaController::class, "hello"])->name("mm1");
+Route::get("/hello-bro/{nama}", [UtamaController::class, "haii"])->name("mm2");
 
-use App\Http\Controllers\KeduaController;
 
-Route::get("/kedua/test", [KeduaController::class, "test"]);
+Route::get("/berita", [BeritaController::class, "add"])->name("berita_tambah");
+Route::post("/proses", [BeritaController::class, "pro"])->name("berita_proses");
+
+
+
+
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.home');
 });
-
-
-
-Route::get("/about-me", function() {
-    return "Nama Saya <b>ipnu adi</b>";
-});
-
-Route::get("/home", function() {
-    return "selamat datang di <b>web kami</b>";
-});
-
-Route::get("/beranda", function() {
-    return "Nama Saya <b>ini beranda saya</b>";
-});
-
-Route::get("/tentang", function() {
-    return "<b>terimakasi telah berkunjung ke web kami</b>";
-});
-
-Route::get("/belajar", function() {
-    return "silahkan pilih<b>pelajarang kesukaan mu</b>";
-});
-
-
-
-
-
-Route::get('/testing-view', function () {
-    return view('view-1');
-});
-
-Route::get('/about-me', function () {
-    return "Nama Saya <b>ipnu adi</b>";
-});
-
-//modul3
-Route::get("/tema/bootstrap", [UtamaController::class, "index"]);

@@ -1,0 +1,1 @@
+<a href='{{ route("nama1.1", ["nama"=$nama]) }}'>click me</a>;
